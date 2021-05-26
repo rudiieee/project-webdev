@@ -6,6 +6,7 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 9567);
+app.use(express.static('public'));
 
 var bodyParser = require('body-parser');
 
