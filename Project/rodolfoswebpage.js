@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/',function(req,res){
-    res.render('home.html');
+    res.render('home');
 });
 
 // app.post('/',function(req,res){
