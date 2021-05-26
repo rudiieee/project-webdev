@@ -8,11 +8,6 @@ app.set('view engine', 'handlebars');
 app.set('port', 9567);
 app.use(express.static('public'));
 
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 app.get('/',function(req,res){
     res.render('home');
 });
