@@ -1,2 +1,4 @@
 .DS_Store
-node_modules/
+lfda
+Project/node_modules/
+Project/package-lock.json
