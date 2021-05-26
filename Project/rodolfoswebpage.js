@@ -17,6 +17,18 @@ app.get('/',function(req,res){
     res.render('home');
 });
 
+app.get('/places',function(req,res){
+    res.render('places');
+});
+
+// app.get('/',function(req,res){
+//     res.render('home');
+// });
+
+// app.get('/',function(req,res){
+//     res.render('home');
+// });
+
 // app.post('/',function(req,res){
 //     var queryParams = [];
 //     var bodyParams = [];
