@@ -21,13 +21,13 @@ app.get('/places',function(req,res){
     res.render('places');
 });
 
-// app.get('/',function(req,res){
-//     res.render('home');
-// });
+app.get('/experience',function(req,res){
+    res.render('experience');
+});
 
-// app.get('/',function(req,res){
-//     res.render('home');
-// });
+app.get('/question',function(req,res){
+    res.render('question');
+});
 
 // app.post('/',function(req,res){
 //     var queryParams = [];
