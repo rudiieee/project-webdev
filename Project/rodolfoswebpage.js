@@ -29,33 +29,6 @@ app.get('/question',function(req,res){
     res.render('question');
 });
 
-// app.post('/',function(req,res){
-//     var queryParams = [];
-//     var bodyParams = [];
-//     for (var param in req.query){
-//         queryParams.push({'name':param,'value':req.query[param]})
-//     }
-//     for (var param in req.body){
-//         bodyParams.push({'name':param,'value':req.body[param]})
-//     }
-//     var data = {};
-//     data.urlList = queryParams;
-//     data.bodyList = bodyParams;
-//     res.render('post-page', data);
-// });
-
-// app.use(function(req,res){
-//     res.status(404);
-//     res.render('404');
-// });
-
-// app.use(function(err, req, res, next){
-//     console.error(err.stack);
-//     res.type('plain/text');
-//     res.status(500);
-//     res.render('500');
-// });
-
 app.listen(app.get('port'), function(){
     console.log('Express started on http://flip2.engr.oregonstate.edu:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
